@@ -2,8 +2,11 @@
 sudo mdutil -i off -a
 echo Edit script-mac.sh in your fastmac repo to auto-run commands in your Mac instances
 
-# Download
-# Download
+# https://github.com/conda/conda/issues/7267
+unset SUDO_UID SUDO_GID SUDO_USER
+
+
+# Download conda
 curl -fsSLo Miniforge3.sh https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-$(uname -m).sh
 # Install with default options
 bash ./Miniforge3.sh -b
