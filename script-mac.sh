@@ -2,6 +2,8 @@
 sudo mdutil -i off -a
 echo Edit script-mac.sh in your fastmac repo to auto-run commands in your Mac instances
 
+alias md5sum='md5 -r'
+
 # Download
 curl -LO https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
 # Install with default options
