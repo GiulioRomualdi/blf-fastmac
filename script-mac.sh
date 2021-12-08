@@ -10,20 +10,19 @@ rm -rf ~/.condarc
 
 cd ~
 
-# Download miniforge3
-curl -fsSLo Miniforge3.sh https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-$(uname -m).sh
+# Download mambaforge
+curl -fsSLo Mambaforge.sh https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-MacOSX-$(uname -m).sh
 # Install with default options
-bash ./Miniforge3.sh -b
+bash ./Mambaforge.sh -b
 
-~/miniforge3/condabin/conda init
-~/miniforge3/condabin/conda config --set auto_activate_base false
+~/mambaforge/condabin/conda init
+~/mambaforge/condabin/conda config --set auto_activate_base false
 source /Users/runner/.bash_profile 
 
 conda create -n robotologyenv
 conda activate robotologyenv
 
-conda install cmake compilers make ninja pkg-config
-conda install -c conda-forge -c robotology idyntree yarp libmatio matio-cpp lie-group-controllers eigen qhull "casadi>=3.5.5" cppad spdlog catch2 nlohmann_json manif manifpy pybind11 numpy pytest scipy opencv pcl tomlplusplus unicycle-footstep-planner valgrind
+mamba install -c conda-forge -c robotology cmake compilers make ninja pkg-config idyntree yarp libmatio matio-cpp lie-group-controllers eigen qhull "casadi>=3.5.5" cppad spdlog catch2 nlohmann_json manif manifpy pybind11 numpy pytest scipy opencv pcl tomlplusplus unicycle-footstep-planner valgrind
 
 cd ~
 git clone https://github.com/ami-iit/bipedal-locomotion-framework.git
