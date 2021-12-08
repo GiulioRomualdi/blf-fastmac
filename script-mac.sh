@@ -22,7 +22,8 @@ source /Users/runner/.bash_profile
 conda create -n robotologyenv
 conda activate robotologyenv
 
-mamba install -c conda-forge -c robotology cmake compilers make ninja pkg-config idyntree yarp libmatio matio-cpp lie-group-controllers eigen qhull "casadi>=3.5.5" cppad spdlog catch2 nlohmann_json manif manifpy pybind11 numpy pytest scipy opencv pcl tomlplusplus unicycle-footstep-planner valgrind
+mamba install -c conda-forge cmake compilers make ninja pkg-config
+mamba install -c conda-forge -c robotology idyntree yarp libmatio matio-cpp lie-group-controllers eigen qhull "casadi>=3.5.5" cppad spdlog catch2 nlohmann_json manif manifpy pybind11 numpy pytest scipy opencv pcl tomlplusplus unicycle-footstep-planner valgrind
 
 cd ~
 git clone https://github.com/ami-iit/bipedal-locomotion-framework.git
