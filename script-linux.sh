@@ -10,9 +10,8 @@ rm -rf ~/.conda
 rm -rf ~/.condarc
 
 cd ~
-
 # Download mambaforge
-curl -fsSLo Mambaforge.sh https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-MacOSX-$(uname -m).sh
+curl -fsSLo Mambaforge.sh https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-Linux-$(uname -m).sh
 # Install with default options
 bash ./Mambaforge.sh -b
 
