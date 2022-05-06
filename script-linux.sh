@@ -17,4 +17,4 @@ bash ./Mambaforge.sh -b
 
 ~/mambaforge/condabin/conda init
 ~/mambaforge/condabin/conda config --set auto_activate_base false
-source /Users/runner/.bashrc
+source /home/runner/.bashrc
