@@ -16,5 +16,4 @@ curl -fsSLo Mambaforge.sh https://github.com/conda-forge/miniforge/releases/late
 bash ./Mambaforge.sh -b
 
 ~/mambaforge/condabin/conda init
-~/mambaforge/condabin/conda config --set auto_activate_base false
 source /home/runner/.bashrc
