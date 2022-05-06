@@ -1,4 +1,9 @@
 # remove conda
+
+sudo apt update
+sudo apt install -y ucommon-utils
+
+
 conda init --reverse
 sudo rm -rf /usr/local/miniconda
 rm -rf ~/.conda
